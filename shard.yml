@@ -1,0 +1,6 @@
+name: twitter
+version: 0.1.0
+
+crystal: 0.22.0
+
+license: MIT

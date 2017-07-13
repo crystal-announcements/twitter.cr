@@ -19,7 +19,7 @@ describe Twitter::REST::Client do
   describe "#get" do
     pending "executes an HTTP GET" do
       client = Twitter::REST::Client.new("CK", "CS", "AT", "AS", "UA")
-      path   = "/1.1/users/show.json"
+      path = "/1.1/users/show.json"
       options = {"screen_name" => "sferik"}
       expect_raises(Twitter::Errors::ClientError, "Invalid or expired token") do
         client.get(path, options)

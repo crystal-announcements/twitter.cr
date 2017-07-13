@@ -1,25 +1,21 @@
-# crystal-twitter-client
+# twitter.cr
 
 ## Installation
 
-Install Crystal lang: http://crystal-lang.org/docs/installation/README.html
+Add this to your application's shard.yml:
+```yml
+dependencies:
+  twitter:
+    github: veelenga/twitter.cr
+```
 
-## Compilation
+## Usage
 
-Compile either project or spec directory:
+```crystal
+require "twitter"
 
-    crystal build src/twitter.cr
 
-or
+c = Twitter::REST::Client.new consumer_key, consumer_secret, access_token, access_token_secret
 
-    crystal build spec/helper.cr
-
-## Run
-
-Run executables
-
-    ./twitter
-
-or
-
-    ./helper
+c.home_timeline
+```
