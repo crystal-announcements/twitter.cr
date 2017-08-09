@@ -6,7 +6,7 @@ Add this to your application's shard.yml:
 ```yml
 dependencies:
   twitter:
-    github: veelenga/twitter.cr
+    github: crystal-announcements/twitter.cr
 ```
 
 ## Usage
